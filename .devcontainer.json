@@ -1,0 +1,17 @@
+{
+  "image": "tensorflow/tensorflow:latest-gpu",
+  "runArgs": [
+            "--gpus",
+            "all"
+    ],
+  "postStartCommand": "pip3 install --upgrade \"jax[cuda]\" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html && pip3 install evojax", 
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python", 
+        "ms-toolsai.jupyter", 
+        "github.copilot"
+        ]
+    }
+  }
+}
